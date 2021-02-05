@@ -1,4 +1,4 @@
-node('nodes'){
+node{
     def mavenHome = tool name:"mvn363"
     stage('get the Code from Git'){
         git branch: 'development', url: 'https://github.com/mmuralim/maven-web-application.git'
