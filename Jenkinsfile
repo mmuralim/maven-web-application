@@ -24,7 +24,7 @@ node('node1'){
     //    sh "scp -vvv -o StrictHostKeyChecking=no target/maven-web-application.war    vagrant@192.168.29.46:/opt/tomcat/webapps/"
     //    }
         sshagent(['tomcatServerCredentials']) {
-            sh "scp -vvv -o StrictHostKeyChecking=no target/maven-web-application.war    vagrant@192.168.29.46:/opt/tomcat/webapps/"
+            sh "scp  -o StrictHostKeyChecking=no target/maven-web-application.war    vagrant@192.168.29.46:/opt/tomcat/webapps/"
         }
     }
     stage('Send Email notification'){
